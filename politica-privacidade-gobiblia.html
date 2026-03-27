@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — GoBíblia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Merriweather:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(180deg, #0a1628 0%, #1a3a5c 40%, #4a90d9 75%, #87CEEB 100%);
+            min-height: 100vh;
+            color: #e8e8e8;
+            line-height: 1.8;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .star {
+            position: absolute;
+            width: 2px; height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite alternate;
+        }
+        @keyframes twinkle { 0% { opacity: 0.2; } 100% { opacity: 0.8; } }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0 32px;
+        }
+        .header .icon {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, #E8A838, #D4842A);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin-bottom: 16px;
+            box-shadow: 0 8px 32px rgba(232, 168, 56, 0.3);
+        }
+        .header h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            color: #FFD980;
+            letter-spacing: 1px;
+        }
+        .header .subtitle {
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 4px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #FFD980;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2 .emoji { font-size: 22px; }
+
+        p { margin-bottom: 14px; font-size: 15px; color: rgba(255,255,255,0.8); }
+
+        .highlight {
+            background: rgba(232, 168, 56, 0.15);
+            border-left: 3px solid #E8A838;
+            padding: 14px 18px;
+            border-radius: 0 10px 10px 0;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        .list-item {
+            padding: 8px 0 8px 20px;
+            position: relative;
+            font-size: 15px;
+            color: rgba(255,255,255,0.8);
+        }
+        .list-item::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #E8A838;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: rgba(255,255,255,0.3);
+            font-size: 13px;
+        }
+        .footer .verse {
+            font-family: 'Merriweather', serif;
+            font-style: italic;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        a { color: #FFD980; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px 60px; }
+            .card { padding: 24px 20px; }
+            .header h1 { font-size: 26px; }
+            h2 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="container">
+    <div class="header">
+        <div class="icon">📖</div>
+        <h1>GoBíblia</h1>
+        <div class="subtitle">Política de Privacidade</div>
+        <div class="subtitle">Última atualização: 27 de março de 2026</div>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">🔒</span> Visão Geral</h2>
+        <p>O GoBíblia é um aplicativo educativo desenvolvido por Silva&amp;Lima Educação. Levamos a privacidade dos nossos usuários a sério. Esta política explica quais dados coletamos, como os usamos e como os protegemos.</p>
+        <div class="highlight">
+            <strong>Resumo:</strong> Coletamos apenas o mínimo necessário para o app funcionar. Não vendemos seus dados. Não exibimos anúncios. Seus dados são seus.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">📋</span> Dados que Coletamos</h2>
+        <p><strong>Dados da conta Google (via Google Sign-In):</strong></p>
+        <div class="list-item">Nome de exibição</div>
+        <div class="list-item">Endereço de email</div>
+        <div class="list-item">Foto de perfil (URL)</div>
+        <p style="margin-top: 14px"><strong>Dados de progresso no app:</strong></p>
+        <div class="list-item">Progresso na trilha de aprendizado (lições completadas, estrelas)</div>
+        <div class="list-item">Economia virtual (Talentos, Pães, Candeia)</div>
+        <div class="list-item">Conquistas desbloqueadas</div>
+        <div class="list-item">Configurações de preferência (tema, tradução)</div>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">🎯</span> Como Usamos os Dados</h2>
+        <div class="list-item">Salvar e restaurar seu progresso entre dispositivos (backup na nuvem)</div>
+        <div class="list-item">Personalizar sua experiência no app</div>
+        <div class="list-item">Enviar notificações locais (versículo do dia, lembretes)</div>
+        <p style="margin-top: 14px"><strong>NÃO usamos seus dados para:</strong></p>
+        <div class="list-item">Vender a terceiros</div>
+        <div class="list-item">Exibir anúncios personalizados</div>
+        <div class="list-item">Marketing ou spam</div>
+        <div class="list-item">Rastreamento comportamental</div>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">☁️</span> Armazenamento e Segurança</h2>
+        <p>Seus dados de progresso são armazenados no <strong>Google Firebase</strong> (Firestore), protegidos por regras de segurança que garantem que apenas você tem acesso aos seus dados. A autenticação é feita via <strong>Google Sign-In</strong>, gerenciada pelo Firebase Auth.</p>
+        <p>Dados locais (preferências, cache) são armazenados no dispositivo via SQLite e SharedPreferences.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">💳</span> Compras no App</h2>
+        <p>O GoBíblia oferece uma assinatura opcional ("Pães Infinitos") processada exclusivamente pela <strong>Google Play Store</strong>. Não coletamos, armazenamos ou temos acesso a dados de pagamento, cartão de crédito ou informações financeiras. Todo o processamento é feito pelo Google.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">🔔</span> Notificações</h2>
+        <p>O app envia notificações locais (versículo do dia, lembretes de estudo, recarga de pães). Todas são processadas no próprio dispositivo — nenhum dado é enviado a servidores externos. Você pode desativar as notificações a qualquer momento nas configurações do app ou do dispositivo.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">👤</span> Seus Direitos</h2>
+        <p>Você pode a qualquer momento:</p>
+        <div class="list-item">Solicitar a exclusão dos seus dados enviando email para o contato abaixo</div>
+        <div class="list-item">Desconectar sua conta Google do app</div>
+        <div class="list-item">Desinstalar o app (dados locais são removidos automaticamente)</div>
+        <p style="margin-top: 14px">Para solicitar exclusão dos dados armazenados na nuvem, entre em contato por email.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">👶</span> Privacidade de Crianças</h2>
+        <p>O GoBíblia não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente dados de menores de 13 anos. Se tomarmos conhecimento de que coletamos dados de uma criança menor de 13 anos, tomaremos medidas para excluir essas informações.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">📝</span> Alterações nesta Política</h2>
+        <p>Podemos atualizar esta política periodicamente. Alterações significativas serão comunicadas por meio de uma atualização no app. A data da última atualização está indicada no topo desta página.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">📬</span> Contato</h2>
+        <p>Para dúvidas, solicitações ou preocupações sobre privacidade:</p>
+        <p><strong>Desenvolvedor:</strong> Silva&amp;Lima Educação</p>
+        <p><strong>Email:</strong> <a href="mailto:gobiblia.comercial@gmail.com">gobiblia.comercial@gmail.com</a></p>
+        <p><strong>App:</strong> GoBíblia</p>
+        <p><strong>Localização:</strong> Bahia, Brasil</p>
+    </div>
+
+    <div class="footer">
+        <div class="verse">"A tua palavra é lâmpada que ilumina os meus passos e luz que clareia o meu caminho." — Salmos 119:105</div>
+        <p>© 2026 GoBíblia — Todos os direitos reservados</p>
+    </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 60; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+      
